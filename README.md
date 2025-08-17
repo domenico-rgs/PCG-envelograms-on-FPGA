@@ -5,6 +5,7 @@
 
 This is an FPGA design for extracting four different envelograms from phonocardiogram (PCG) recordings.
 The envelograms are the Power Spectral Density (PSD) envelope, the Hilbert envelope, the Wavelet envelope and the Homomorphic envelogram.
+
 More details can be found in this paper that uses such features for segmenting PCGs: [Deep Convolutional Neural Networks for Heart Sound Segmentation - IEEE Journal of Biomedical and Health Informatics](https://ieeexplore.ieee.org/abstract/document/8620278)
 
 **Table of Contents**
