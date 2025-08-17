@@ -16,10 +16,11 @@ More details can be found in this paper that uses such features for segmenting P
 
 ## Requirements and Project Structure
 This project requires **Vivado 2023.2** and **Vitis Model Composer**.  
-The code is organized in the `src/` directory, which contains the Matlab/VMC designs of the modules for recorded inputs quantized at 16 or 32 bits, the required variables, the corresponding `.m` files, and two Python notebooks used for output analysis.
+`data_analysis/` folder contains python notebook used to analyze the IP operation emulations using recordings in `audio samples/`. `ip_repo` is the repository to be used to include the IP in a design within Vivado.
+`env_extQ16.slx/` and `variables16.m` are the Matlab/VMC design and the required variables, respectively.
 
 ## Results
-:dart: All the results obtained from the tests are explained in the following paper: [FPGA Design of Digital Circuits for Phonocardiogram Pre-Processing Enabling Real-Time and Low-Power AI Processing](https://www.doi.org/10.1109/dsd64264.2024.00084).
+All the results obtained from the tests are explained in the following paper: [FPGA Design of Digital Circuits for Phonocardiogram Pre-Processing Enabling Real-Time and Low-Power AI Processing](https://www.doi.org/10.1109/dsd64264.2024.00084).
 
 ### Citation
 ```bibtex
