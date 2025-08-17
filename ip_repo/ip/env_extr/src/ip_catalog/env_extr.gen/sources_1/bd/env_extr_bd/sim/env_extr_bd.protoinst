@@ -1,0 +1,50 @@
+{
+	"version": "1.0",
+	"modules": {
+		"env_extr_bd": {
+			"proto_instances": {
+				"/env_extr_1/hilbert_m_data": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"TDATA": { "actual": "hilbert_m_data_tdata[15:0]"},
+						"TVALID": { "actual": "hilbert_m_data_tvalid[0:0]"}
+					}
+				},
+				"/env_extr_1/homo_m_data": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"TDATA": { "actual": "homo_m_data_tdata[15:0]"},
+						"TVALID": { "actual": "homo_m_data_tvalid[0:0]"}
+					}
+				},
+				"/env_extr_1/psd_m_data": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"TDATA": { "actual": "psd_m_data_tdata[31:0]"},
+						"TVALID": { "actual": "psd_m_data_tvalid[0:0]"}
+					}
+				},
+				"/env_extr_1/steto_in_axis": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"TDATA": { "actual": "steto_in_axis_tdata[15:0]"},
+						"TREADY": { "actual": "steto_in_axis_tready[0:0]"},
+						"TVALID": { "actual": "steto_in_axis_tvalid[0:0]"}
+					}
+				},
+				"/env_extr_1/swt_m_data": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"TDATA": { "actual": "swt_m_data_tdata[15:0]"},
+						"TVALID": { "actual": "swt_m_data_tvalid[0:0]"}
+					}
+				}
+			}
+		}
+	}
+}

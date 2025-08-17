@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="env_extr_bd_env_extr_1_0_synth_1" LaunchDir="C:/Users/windows/Desktop/HSS/Q16_40840_optim/code2/ip/env_extr/src/ip_catalog/env_extr.runs/env_extr_bd_env_extr_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/windows/Desktop/HSS/Q16_40840_optim/code2/ip/env_extr/src/ip_catalog/env_extr.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="env_extr_bd_env_extr_1_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

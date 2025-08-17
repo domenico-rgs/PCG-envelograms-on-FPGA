@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Tue Oct 29 16:53:21 2024
+# Process ID: 24100
+# Current directory: C:/Users/windows/Desktop/HSS/Q16_40840_optim/code2/ip/env_extr/src
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: C:/Users/windows/Desktop/HSS/Q16_40840_optim/code2/ip/env_extr/src/vivado.log
+# Journal file: C:/Users/windows/Desktop/HSS/Q16_40840_optim/code2/ip/env_extr/src\vivado.jou
+# Running On: DESKTOP-JHBES8T, OS: Windows, CPU Frequency: 3187 MHz, CPU Physical cores: 24, Host memory: 137242 MB
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace

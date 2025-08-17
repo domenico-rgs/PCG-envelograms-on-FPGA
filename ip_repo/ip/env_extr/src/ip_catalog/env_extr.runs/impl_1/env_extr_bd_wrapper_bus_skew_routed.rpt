@@ -1,0 +1,17 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
+| Date              : Tue Oct 29 17:11:30 2024
+| Host              : DESKTOP-JHBES8T running 64-bit major release  (build 9200)
+| Command           : report_bus_skew -warn_on_violation -file env_extr_bd_wrapper_bus_skew_routed.rpt -pb env_extr_bd_wrapper_bus_skew_routed.pb -rpx env_extr_bd_wrapper_bus_skew_routed.rpx
+| Design            : env_extr_bd_wrapper
+| Device            : xck26-sfvc784
+| Speed File        : -2LV  PRODUCTION 1.30 05-15-2022
+| Design State      : Routed
+| Temperature Grade : C
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

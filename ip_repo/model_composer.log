@@ -1,0 +1,82 @@
+--------------------------------------------------------------------------------
+Vitis Model Composer 4126759 2023.2.2 Thu Feb  8 23:58:08 MST 2024 
+--------------------------------------------------------------------------------
+Model Composer: C:/Xilinx/Model_Composer/2023.2
+Vivado: C:/Xilinx/Vivado/2023.2
+Vitis: C:/Xilinx/Vitis/2023.2
+HLS: C:/Xilinx/Vitis_HLS/2023.2
+SysGen: C:/Xilinx/Vivado/2023.2
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Generating code for env_extr
+
+Warning:
+ code:     
+ severity: L2
+ open_fcn:   
+ summary:  CE for rate changing configuration
+ details:  Clock enable is present for a rate changing configuration. User has to ensure that the clock enable is aligned with internally generated clock enables for correct operation. Please consult the section on "Clock Handling in HDL" from System generator user guide. Support for user driven clock enables for rate changing configurations may be deprecated in future.
+
+Warning:
+ code:     
+ severity: L2
+ open_fcn:   
+ summary:  CE for rate changing configuration
+ details:  Clock enable is present for a rate changing configuration. User has to ensure that the clock enable is aligned with internally generated clock enables for correct operation. Please consult the section on "Clock Handling in HDL" from System generator user guide. Support for user driven clock enables for rate changing configurations may be deprecated in future.
+
+Warning:
+ code:     
+ severity: L2
+ open_fcn:   
+ summary:  CE for rate changing configuration
+ details:  Clock enable is present for a rate changing configuration. User has to ensure that the clock enable is aligned with internally generated clock enables for correct operation. Please consult the section on "Clock Handling in HDL" from System generator user guide. Support for user driven clock enables for rate changing configurations may be deprecated in future.
+
+Warning:
+ code:     
+ severity: L2
+ open_fcn:   
+ summary:  CE for rate changing configuration
+ details:  Clock enable is present for a rate changing configuration. User has to ensure that the clock enable is aligned with internally generated clock enables for correct operation. Please consult the section on "Clock Handling in HDL" from System generator user guide. Support for user driven clock enables for rate changing configurations may be deprecated in future.
+
+Warning:
+ code:     
+ severity: L2
+ open_fcn:   
+ summary:  CE for rate changing configuration
+ details:  Clock enable is present for a rate changing configuration. User has to ensure that the clock enable is aligned with internally generated clock enables for correct operation. Please consult the section on "Clock Handling in HDL" from System generator user guide. Support for user driven clock enables for rate changing configurations may be deprecated in future.
+
+Warning:
+ code:     
+ severity: L2
+ open_fcn:   
+ summary:  CE for rate changing configuration
+ details:  Clock enable is present for a rate changing configuration. User has to ensure that the clock enable is aligned with internally generated clock enables for correct operation. Please consult the section on "Clock Handling in HDL" from System generator user guide. Support for user driven clock enables for rate changing configurations may be deprecated in future.
+
+Warning:
+ code:     
+ severity: L2
+ open_fcn:   
+ summary:  CE for rate changing configuration
+ details:  Clock enable is present for a rate changing configuration. User has to ensure that the clock enable is aligned with internally generated clock enables for correct operation. Please consult the section on "Clock Handling in HDL" from System generator user guide. Support for user driven clock enables for rate changing configurations may be deprecated in future.
+
+Warning:
+ code:     
+ severity: L2
+ open_fcn:   
+ summary:  CE for rate changing configuration
+ details:  Clock enable is present for a rate changing configuration. User has to ensure that the clock enable is aligned with internally generated clock enables for correct operation. Please consult the section on "Clock Handling in HDL" from System generator user guide. Support for user driven clock enables for rate changing configurations may be deprecated in future.
+
+Warning:
+ code:     
+ severity: L2
+ open_fcn:   
+ summary:  CE for rate changing configuration
+ details:  Clock enable is present for a rate changing configuration. User has to ensure that the clock enable is aligned with internally generated clock enables for correct operation. Please consult the section on "Clock Handling in HDL" from System generator user guide. Support for user driven clock enables for rate changing configurations may be deprecated in future.
+
+Warning:
+ code:     
+ severity: L2
+ open_fcn:   
+ summary:  CE for rate changing configuration
+ details:  Clock enable is present for a rate changing configuration. User has to ensure that the clock enable is aligned with internally generated clock enables for correct operation. Please consult the section on "Clock Handling in HDL" from System generator user guide. Support for user driven clock enables for rate changing configurations may be deprecated in future.
+

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Tue Oct 29 17:05:15 2024
+# Process ID: 16640
+# Current directory: C:/Users/windows/Desktop/HSS/Q16_40840_optim/code2/ip/env_extr/src/ip_catalog/env_extr.runs/impl_1
+# Command line: vivado.exe -log env_extr_bd_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source env_extr_bd_wrapper.tcl -notrace
+# Log file: C:/Users/windows/Desktop/HSS/Q16_40840_optim/code2/ip/env_extr/src/ip_catalog/env_extr.runs/impl_1/env_extr_bd_wrapper.vdi
+# Journal file: C:/Users/windows/Desktop/HSS/Q16_40840_optim/code2/ip/env_extr/src/ip_catalog/env_extr.runs/impl_1\vivado.jou
+# Running On: DESKTOP-JHBES8T, OS: Windows, CPU Frequency: 3187 MHz, CPU Physical cores: 24, Host memory: 137242 MB
+#-----------------------------------------------------------
+source env_extr_bd_wrapper.tcl -notrace

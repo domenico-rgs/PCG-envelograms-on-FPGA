@@ -1,0 +1,229 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
+| Date         : Tue Oct 29 17:11:02 2024
+| Host         : DESKTOP-JHBES8T running 64-bit major release  (build 9200)
+| Command      : report_drc -file env_extr_bd_wrapper_drc_routed.rpt -pb env_extr_bd_wrapper_drc_routed.pb -rpx env_extr_bd_wrapper_drc_routed.rpx
+| Design       : env_extr_bd_wrapper
+| Device       : xck26-sfvc784-2LV-c
+| Speed File   : -2LV
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_env_extr_bd_wrapper
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 35
++-----------+----------+---------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                         | Violations |
++-----------+----------+---------------------------------------------------------------------+------------+
+| DPOP-3    | Warning  | PREG Output pipelining                                              | 10         |
+| DPOP-4    | Warning  | MREG Output pipelining                                              | 20         |
+| RTSTAT-10 | Warning  | No routable loads                                                   | 1          |
+| AVAL-155  | Advisory | enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 4          |
++-----------+----------+---------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPOP-3#1 Warning
+PREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/exp/mult/comp1.core_instance1/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 output env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/exp/mult/comp1.core_instance1/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#2 Warning
+PREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/exp/mult/comp1.core_instance1/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 output env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/exp/mult/comp1.core_instance1/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#3 Warning
+PREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/exp/mult/comp1.core_instance1/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[2].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 output env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/exp/mult/comp1.core_instance1/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[2].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#4 Warning
+PREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult1/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 output env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult1/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#5 Warning
+PREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult1/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 output env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult1/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#6 Warning
+PREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult2/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 output env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult2/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#7 Warning
+PREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult2/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 output env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult2/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#8 Warning
+PREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/log2/mult/comp6.core_instance6/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 output env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/log2/mult/comp6.core_instance6/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#9 Warning
+PREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/mult/comp4.core_instance4/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 output env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/mult/comp4.core_instance4/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#10 Warning
+PREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/mult1/comp5.core_instance5/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 output env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/mult1/comp5.core_instance5/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-4#1 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/hilbert/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/hilbert/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#2 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/hilbert/mult1/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/hilbert/mult1/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#3 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/exp/mult/comp1.core_instance1/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/exp/mult/comp1.core_instance1/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#4 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/exp/mult/comp1.core_instance1/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/exp/mult/comp1.core_instance1/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#5 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/exp/mult/comp1.core_instance1/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[2].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/exp/mult/comp1.core_instance1/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[2].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#6 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/exp/mult/comp1.core_instance1/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[3].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/exp/mult/comp1.core_instance1/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[3].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#7 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/log2/mult/comp2.core_instance2/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/log2/mult/comp2.core_instance2/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#8 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#9 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult1/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult1/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#10 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult1/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult1/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#11 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult1/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[1].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult1/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[1].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#12 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult2/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult2/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#13 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult2/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult2/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#14 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult2/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[1].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/mult2/comp3.core_instance3/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[1].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#15 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/log2/mult/comp6.core_instance6/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/log2/mult/comp6.core_instance6/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#16 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/log2/mult/comp6.core_instance6/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[1].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/log2/mult/comp6.core_instance6/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[1].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#17 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/mult/comp4.core_instance4/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/mult/comp4.core_instance4/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#18 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/mult/comp4.core_instance4/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[1].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/mult/comp4.core_instance4/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[1].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#19 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/mult1/comp5.core_instance5/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/mult1/comp5.core_instance5/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#20 Warning
+MREG Output pipelining  
+DSP env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/mult1/comp5.core_instance5/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 multiplier stage env_extr_bd_i/env_extr_1/U0/env_extr_struct/swt/shannone/mult1/comp5.core_instance5/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[1].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+94 net(s) have no routable loads. The problem bus(es) and/or net(s) are env_extr_bd_i/env_extr_1/U0/env_extr_struct/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb,
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i,
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/fifo1/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb,
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/fifo1/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i,
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/fifo2/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb,
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/fifo2/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i,
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/fifo3/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb,
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/fifo3/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i,
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/filtering/fifo/comp2.core_instance2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb,
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/filtering/fifo/comp2.core_instance2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i,
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/hilbert/fifo/comp3.core_instance3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb,
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/hilbert/fifo/comp3.core_instance3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i,
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/hilbert/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/hilbert_m_data_tdata[15:0],
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/homomorphic/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/homo_m_data_tdata[15:0],
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/psd_m_data_tdata[31:0]
+ (the first 15 of 18 listed nets/buses).
+Related violations: <none>
+
+AVAL-155#1 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/fast_fourier_transform_9_1/env_extr_xfft_v9_1_i2_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[0].bppDSP[0].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#2 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/fast_fourier_transform_9_1/env_extr_xfft_v9_1_i2_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[0].bppDSP[0].u_l[1].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#3 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/fast_fourier_transform_9_1/env_extr_xfft_v9_1_i2_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[0].bppDSP[0].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#4 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+env_extr_bd_i/env_extr_1/U0/env_extr_struct/psd/fast_fourier_transform_9_1/env_extr_xfft_v9_1_i2_instance/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[4].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[0].bppDSP[0].u_l[1].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+
